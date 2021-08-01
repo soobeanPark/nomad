@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="momentum.css">
+  <title>momentum</title>
+</head>
+<body>
+  <form id = "loginForm" class = "hidden">
+    <input required
+    type = "text"
+    maxlength="15"
+    placeholder="What's your name?" />
+    <input type ="submit" value = "Login" />
+  </form>
+  <h1 class="hidden" id="greeting">Hello</h1>
+  <h2 id="clock">00:00:00</h2>
+
+  <!--todo1. form을 만들고, input 만들어서 입력할 수 있도록 한다--> 
+  <form id=todoForm>
+    <input type="text" placeholder="write your todo and press enter" required />
+  </form>
+  <!--todo2. todo-list라는 id를 가진 ul 만들기-->
+  <ul id="todo-list"></ul>
+
+  <div id = "quote">
+    <span></span>
+    <span></span>
+  </div>
+
+  <script src = "momentum.js"></script>
+  <script src = "clock.js"></script>
+  <script src = "Quotes.js"></script>
+  <script src = "background.js"></script>
+  <script src = "todo.js"></script>
+</body>
+</html>
